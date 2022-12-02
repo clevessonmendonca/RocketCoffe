@@ -1,0 +1,116 @@
+:root {
+    --backgrond: #000;
+    --text-color: #FFF;
+    --button: #8257E5;
+    --border: #29292E;
+    --border-menu-mobile: #A8A8B3;
+    --text-color-menu-mobile: #E1E1E6;
+}
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    color: var(--text-color);
+    list-style: none;
+}
+
+header {
+    z-index: 999;
+}
+
+body {
+    background: var(--backgrond);
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    margin: 40px 24px 0;
+}
+
+.container-mobile {
+    padding: 20px 0 60px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.primary-button {
+    border: 1px solid var(--button);
+    padding: 11px 38px;
+    border-radius: 6px;
+    background: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.primary-button:hover {
+    background-color: var(--button);
+}
+
+.subtitle {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 500;
+    max-width: 600px;
+}
+
+main div .blur {
+    position: fixed;
+    z-index: -1;
+}
+
+main div .blur:nth-child(1) {
+    bottom: 0;
+}
+
+main div .blur:nth-child(2) {
+    top: 0;
+    right: 0;
+}
+
+main div .blur:nth-child(3) {
+    width: 100%;
+    bottom: auto;
+}
+
+.mobile {
+    display: none;
+}
+
+/* ----------------- */
+@media (max-width: 928px) {
+    header .logo, header nav, header button {
+        display: none !important;
+    }
+
+    header .container {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .mobile-menu {
+        cursor: pointer;
+    }    
+
+    .blur {
+        display: none;
+    }
+
+    main div .blur:nth-child(3) {
+        display: block;
+    }
+}

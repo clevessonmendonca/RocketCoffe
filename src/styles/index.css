@@ -1,0 +1,70 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .container {
+    align-items: center;
+    gap: 100px;  
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+header .container nav li a {
+    padding: 24px 0;
+}
+
+header .container nav li a:hover {
+    border-bottom: 2px solid var(--button);
+}
+
+main .container {
+    align-items: center;
+    flex-direction: column;
+}
+
+main .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+main .title span {
+    color: var(--backgrond);
+    text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+}
+
+
+@media (max-width: 928px) {
+    .container, .container-mobile {
+        display: flex;
+        margin: 40px 24px 0;
+    }
+
+    .primary-button {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+    }
+
+    main .container img {
+        width: 95vw;
+    }
+
+    main .title {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 400px) {
+    main .title {
+        font-size: 2rem;
+    }
+}
