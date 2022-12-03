@@ -3,8 +3,8 @@
     --text-color: #FFF;
     --button: #8257E5;
     --border: #29292E;
-    --border-menu-mobile: #A8A8B3;
-    --text-color-menu-mobile: #E1E1E6;
+    --border-menu-mobile: #29292E;
+    --text-color-menu-mobile: #A8A8B3;
 }
 
 * {
@@ -64,6 +64,10 @@ a {
     max-width: 600px;
 }
 
+.mobile-menu {
+    display: none;
+}
+
 main div .blur {
     position: fixed;
     z-index: -1;
@@ -102,8 +106,9 @@ main div .blur:nth-child(3) {
         display: block;
     }
 
-    .mobile-menu {
+    .mobile-menu-button {
         cursor: pointer;
+        padding: 10px;
     }    
 
     .blur {
