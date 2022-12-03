@@ -1,5 +1,5 @@
 # RocketCoffe
-Homepage interativa para uma marca de café.
+Homepage interativa e responsiva para uma marca de café.
 
 ## Layout
 
